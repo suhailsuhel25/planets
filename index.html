@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List — FE-BE Simulation (Supabase)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Supabase JS Library -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>Todo <span class="accent">Master</span></h1>
+      <p class="subtitle">FE-BE Integration Demo with Supabase</p>
+    </header>
+
+    <div class="config-alert" id="configAlert">
+      <p>⚠️ <strong>Setup Required:</strong> Masukkan Supabase URL dan API Key di <code>script.js</code> untuk mengaktifkan sinkronisasi database.</p>
+    </div>
+
+    <main class="todo-card">
+      <form id="todoForm" class="input-group">
+        <input type="text" id="todoInput" placeholder="Apa yang perlu dikerjakan hari ini?" required>
+        <button type="submit" id="btnAdd">
+          <span class="btn-icon">+</span> Tambah
+        </button>
+      </form>
+
+      <div class="status-bar">
+        <span id="taskCount">0 Tugas</span>
+        <button id="btnRefresh" class="btn-text">🔄 Refresh</button>
+      </div>
+
+      <div class="list-wrapper">
+        <ul id="todoList" class="todo-list">
+          <!-- Items will be injected here -->
+          <li class="loading">Memuat data dari database...</li>
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+      <p>Materi Pertemuan 7 — Web Development Era AI</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
