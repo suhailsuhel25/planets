@@ -1,4 +1,4 @@
-(function() {
+(function() { 
   // CONFIGURATION — Masukkan detail project Supabase kamu di sini
   const SUPABASE_URL = 'https://ybbmgrooqrxijvuysufz.supabase.co';
   const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InliYm1ncm9vcXJ4aWp2dXlzdWZ6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzkyMzA3NDIsImV4cCI6MjA5NDgwNjc0Mn0.JCSpHTwjFCROZcM6OQxX4h2CyflMIyD_RoRCrof4boA';
